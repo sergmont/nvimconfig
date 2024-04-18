@@ -8,7 +8,4 @@ return {
 		-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 	},
 
-	config = function()
-		vim.keymap.set("n", "<leader>ft", ":Neotree filesystem reveal toggle<CR>")
-	end,
 }
