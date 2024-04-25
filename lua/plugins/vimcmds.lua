@@ -19,6 +19,9 @@ opt.termguicolors = true
 opt.background = 'dark'
 opt.signcolumn = "yes"
 
-return {
-  vim.cmd("set splitbelow splitright"),
-}
+-- split windows
+opt.splitbelow = true
+opt.splitright = true
+
+return {}
+
