@@ -22,5 +22,7 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 
 -- FILE TREE INTERACTIONS
-vim.keymap.set("n", "<leader>ft", ":Neotree filesystem reveal toggle<CR>")
+-- keymap.set("n", "<leader>ft", ":Neotree filesystem reveal toggle<CR>")
+keymap.set("n", "<leader>ft", ":Neotree reveal toggle float <CR>")
+keymap.set("n", "<leader>fg", ":Neotree float git_status toggle<CR>")
 return {}
