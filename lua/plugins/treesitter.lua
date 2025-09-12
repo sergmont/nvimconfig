@@ -1,4 +1,28 @@
 return {
+  {
+    "nvim-treesitter/nvim-treesitter",
+    lazy = 'false',
+    branch = 'main',
+    build = ":tsupdate",
+    opts = {
+      highlight = { enable = true },
+      indent = { enable = true },
+      ensure_installed = {
+        "lua",
+        "vim",
+        "javascript",
+        "typescript",
+        "markdown",
+        "json",
+        "html",
+      },
+    },
+    dependencies = { 'windwp/nvim-ts-autotag' },
+  },
+}
+
+--[[
+return {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		event = { "BufReadPre", "BufNewFile" },
@@ -33,3 +57,6 @@ return {
 		end,
 	},
 }
+
+
+  ]]

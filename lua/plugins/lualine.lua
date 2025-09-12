@@ -1,8 +1,17 @@
 return {
-	"nvim-lualine/lualine.nvim",
-	dependencies = { "nvim-tree/nvim-web-devicons" },
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = {
+      options = {
+        theme = 'everforest',
+      }
+    },
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+}
 
-	config = function()
+--[[
+  config = function()
 		require("lualine").setup({
 			options = {
 				icons_enabled = true,
@@ -44,4 +53,6 @@ return {
 			extensions = {},
 		})
 	end,
+
 }
+]]
