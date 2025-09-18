@@ -23,5 +23,6 @@ opt.signcolumn = "yes"
 opt.splitbelow = true
 opt.splitright = true
 
+local dg = vim.diagnostic
+dg.config({ virtual_text = true })
 return {}
-

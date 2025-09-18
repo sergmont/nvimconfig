@@ -7,6 +7,8 @@ return {
     opts = {
       highlight = { enable = true },
       indent = { enable = true },
+      autotag = { enable = true },
+      sync_install = true,
       ensure_installed = {
         "lua",
         "vim",
